@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="
+        const randomNumber = Math.random();
+        let result = ''
+        let yourGuess = 'heads'
+        if (randomNumber < 0.5){
+            result = 'heads';
+        }
+        else {
+            result = 'tails'
+        }
+        if (yourGuess == result){
+            alert(`You guessed right`);
+        }
+        else{
+            alert(`Try again`)
+        }
+        // console.log(result)
+        ">Head</button>
+    <button onclick="
+        const randomNumber2 = Math.random();
+        let result2 = ''
+        let yourGuess2 = 'tails'
+        if (randomNumber2 < 0.5){
+            result2 = 'heads';
+        }
+        else {
+            result2 = 'tails'
+        }
+        if (yourGuess2 == result2){
+            alert(`You guessed right`);
+        }
+        else{
+            alert(`Try again`)
+        }
+        console.log(result2)
+    ">Tail</button>
+
+
+
+    <script>
+        const hour = 14;
+        const now = new Date();
+        const currentHour = now.getHours();
+        startPerformance = performance.now();
+        if (currentHour >= 6 && currentHour < 12){
+            console.log("Good morning");
+        }
+        else if(currentHour > 12 && currentHour < 17){
+            console.log("Good afternoon")
+        }
+        else console.log("Good night");
+        endPerformance = performance.now();
+        console.log(`The time taken for this is ${endPerformance - startPerformance}`);
+
+
+        // discount assignment
+        let age = 100;
+        const isChild = (age > 0) && (age < 6);
+        const isAdult = age > 65;
+        const isHoliday = true;
+        if (isChild || isAdult  && isHoliday){
+            console.log("You get a Discount");
+        }
+        else
+        {console.log("no discount for you")};
+
+        //coin flip game
+        
+        
+        
+    </script>
+</body>
+</html>
